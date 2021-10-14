@@ -46,10 +46,25 @@ namespace Handlaer
             MyManager.Add(persona);
         }
 
-        public List<Persona> Find(string src)
+        public List<Persona> Cerca(string src)
         {
-            MyManager.Find(src);
+            return MyManager.Find(src);
         }
+
+        public List<Persona> Cerca(string name,string surrName)
+        {
+            return MyManager.Find(name, surrName);
+        }
+
+        public Persona Cerca(int id)
+        {
+            return MyManager.Find(id);
+        }
+
+        public bool Modifica(Persona pers)
+        {
+            return MyManager.Update(pers);
+        } 
 
         }
 }
