@@ -29,7 +29,7 @@ namespace FileHelper
 
         public bool Put(string path, List<string> content)
         {
-            if(File.Exists(path) != null )
+            if(File.Exists(path) == true )
             { 
                 File.AppendAllLines(path, content);
                 return true;
@@ -38,7 +38,7 @@ namespace FileHelper
             {
                 string header = "Id;Name;SurrName;Phone;Email;BirthDate" + Environment.NewLine;
                 File.WriteAllText(path, header);
-                if ( Put(path, content) != null)
+                if ( Put(path, content) == true)
                     return true;
                 else
                     return false;
