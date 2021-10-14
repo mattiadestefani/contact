@@ -35,7 +35,12 @@ namespace FileHelper
 
         public List<string> PutPersona(List<Persona> persone)
         {
-            throw new NotImplementedException();
+            var rows = new List<string>();
+            foreach (var pers in persone)
+            {
+                var singolaRiga = String.Concat(pers.Id, ";", pers.Name, ";", pers.SurName, ";", pers.Phone, ";", pers.Email, ";", pers.BirthDate.ToShortDateString(),Environment.NewLine);
+            }
+            return rows;
         }
     }
 }

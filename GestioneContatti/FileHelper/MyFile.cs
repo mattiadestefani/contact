@@ -29,7 +29,22 @@ namespace FileHelper
 
         public bool Put(string path, List<string> content)
         {
-            throw new NotImplementedException();
+            if(File.Exists(path) != null )
+            { 
+                File.AppendAllLines(path, content);
+                return true;
+            }
+            else
+            {
+                string header = "Id;Name;SurrName;Phone;Email;BirthDate" + Environment.NewLine;
+                File.WriteAllText(path, header);
+                if ( Put(path, content) != null)
+                    return true;
+                else
+                    return false;
+                
+            }
+            return false;
         }
     }
 }
