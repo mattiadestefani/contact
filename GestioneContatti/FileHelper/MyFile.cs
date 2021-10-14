@@ -29,22 +29,20 @@ namespace FileHelper
 
         public bool Put(string path, List<string> content)
         {
-            if(File.Exists(path) == true )
-            { 
-                File.AppendAllLines(path, content);
+            string header = "Id;Name;SurrName;Phone;Email;BirthDate";
+            using var stamp = new StreamWriter(path);
+            if (stamp != null)
+            {
+                stamp.WriteLine(header);
+                foreach (var tmp in content)
+                {
+                    stamp.WriteLine(tmp);
+                }
                 return true;
             }
-            else
-            {
-                string header = "Id;Name;SurrName;Phone;Email;BirthDate" + Environment.NewLine;
-                File.WriteAllText(path, header);
-                if ( Put(path, content) == true)
-                    return true;
-                else
-                    return false;
-                
-            }
             return false;
+
+
         }
     }
 }

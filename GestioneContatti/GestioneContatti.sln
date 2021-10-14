@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManager", "ContactMa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestioneContatti", "GestioneContatti\GestioneContatti.csproj", "{5F14FB09-C94A-4947-AA21-0D9A0492EC70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Handlaer", "HandlaerContatti\Handlaer.csproj", "{C2A8E5BE-5469-44AF-A6D3-F58BBB5BDA4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Handlaer", "HandlaerContatti\Handlaer.csproj", "{C2A8E5BE-5469-44AF-A6D3-F58BBB5BDA4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esecutore", "Esecutore\Esecutore.csproj", "{B68BDD22-90F6-4CBC-89C5-10CC02FF21F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C2A8E5BE-5469-44AF-A6D3-F58BBB5BDA4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2A8E5BE-5469-44AF-A6D3-F58BBB5BDA4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2A8E5BE-5469-44AF-A6D3-F58BBB5BDA4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B68BDD22-90F6-4CBC-89C5-10CC02FF21F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68BDD22-90F6-4CBC-89C5-10CC02FF21F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68BDD22-90F6-4CBC-89C5-10CC02FF21F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68BDD22-90F6-4CBC-89C5-10CC02FF21F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

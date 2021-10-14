@@ -4,8 +4,9 @@
     "\\GestioneContatti",
     "\\GestioneContatti\\ContactManager",
     "\\GestioneContatti\\FileHelper",
-    "\\GestioneContatti\\GestioneContatti"
+    "\\GestioneContatti\\GestioneContatti",
+    "\\GestioneContatti\\HandlaerContatti"
   ],
-  "SelectedNode": "\\GestioneContatti\\GestioneContatti.sln",
+  "SelectedNode": "\\GestioneContatti",
   "PreviewInSolutionExplorer": false
 }
