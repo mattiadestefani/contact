@@ -1,4 +1,5 @@
-﻿using Handlaer;
+﻿using GestioneContatti;
+using Handlaer;
 using System;
 using System.Linq;
 
@@ -7,6 +8,33 @@ namespace Esecutore
     class Program
     { 
         private static HandlerContatti Rub;
+        private static void CreatePerson()
+        {
+            Console.WriteLine("nome");
+            string nome = Console.ReadLine();
+            Console.WriteLine("cogonme");
+            string cognome = Console.ReadLine();
+            Console.WriteLine("mail");
+            string mail = Console.ReadLine();
+            Console.WriteLine("telefono");
+            string phone = Console.ReadLine();
+            Console.WriteLine("data nascita");
+            DateTime nascita = Convert.ToDateTime(Console.ReadLine());
+
+            Persona newPerson = new Persona
+            {
+                Name = nome,
+                SurName = cognome,
+                Phone = phone,
+                Email = mail,
+                BirthDate = nascita
+            };
+            if (Rub.Modifica(newPerson) == true)
+                Console.WriteLine("Aggiunto correttamente");
+            else
+                Console.WriteLine("Errore");
+        }
+
         static void Main(string[] args)
         {
             Rub = new HandlerContatti(@"C:\DATA\miaRub.csv");
@@ -28,7 +56,7 @@ namespace Esecutore
             string surrToLook = "Martedì";
 
             var risultatoLook = Rub.Cerca(nameToLook, surrToLook);
-            foreach(var tmp in risultatoLook)
+            foreach (var tmp in risultatoLook)
             {
                 Console.WriteLine($"Trovato persona {tmp.Name} e cognome {tmp.SurName}");
             }
@@ -37,9 +65,9 @@ namespace Esecutore
             Console.WriteLine("Inserisci nome di utente da modificare");
             nameToLook = Console.ReadLine();
             var elenco = Rub.Cerca(nameToLook);
-            if( elenco != null)
+            if (elenco != null)
             {
-                foreach(var tmp in elenco)
+                foreach (var tmp in elenco)
                 {
                     Console.WriteLine($"utente {tmp.Name} {tmp.SurName} ID==> {tmp.Id}");
                 }
@@ -55,9 +83,13 @@ namespace Esecutore
                     Console.WriteLine("Errore nel cambiamento");
             }
 
+            //CREAZIONE NUOVO CONTATTO
+            CreatePerson();
 
         }
 
-    
+
+
+
     }
 }
