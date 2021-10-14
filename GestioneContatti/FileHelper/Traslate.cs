@@ -39,6 +39,7 @@ namespace FileHelper
             foreach (var pers in persone)
             {
                 var singolaRiga = String.Concat(pers.Id, ";", pers.Name, ";", pers.SurName, ";", pers.Phone, ";", pers.Email, ";", pers.BirthDate.ToShortDateString(),Environment.NewLine);
+                rows.Add(singolaRiga);
             }
             return rows;
         }
