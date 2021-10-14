@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ContactManager\ContactManager.csproj" />
+    <ProjectReference Include="..\FileHelper\FileHelper.csproj" />
+    <ProjectReference Include="..\GestioneContatti\GestioneContatti.csproj" />
+  </ItemGroup>
+
+</Project>

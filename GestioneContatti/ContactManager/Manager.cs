@@ -18,6 +18,8 @@ namespace ContactManager
             Persone = persone;
         }
 
+        public List<Persona> getAll() => Persone;
+
         public bool Add(Persona persona)
         {
             var search = Find(persona);

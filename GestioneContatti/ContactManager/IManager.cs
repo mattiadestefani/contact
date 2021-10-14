@@ -14,5 +14,7 @@ namespace ContactManager
         bool Delete(Persona persona);
         bool Delete(int id);
         bool Update(Persona persona);
+
+        List<Persona> getAll();
     }
 }

@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileHelper", "FileHelper\Fi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManager", "ContactManager\ContactManager.csproj", "{95F3BDBD-AABB-4207-A907-A1D9497B23E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestioneContatti", "GestioneContatti\GestioneContatti.csproj", "{5F14FB09-C94A-4947-AA21-0D9A0492EC70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestioneContatti", "GestioneContatti\GestioneContatti.csproj", "{5F14FB09-C94A-4947-AA21-0D9A0492EC70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Handlaer", "HandlaerContatti\Handlaer.csproj", "{C2A8E5BE-5469-44AF-A6D3-F58BBB5BDA4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{5F14FB09-C94A-4947-AA21-0D9A0492EC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F14FB09-C94A-4947-AA21-0D9A0492EC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F14FB09-C94A-4947-AA21-0D9A0492EC70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A8E5BE-5469-44AF-A6D3-F58BBB5BDA4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A8E5BE-5469-44AF-A6D3-F58BBB5BDA4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A8E5BE-5469-44AF-A6D3-F58BBB5BDA4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A8E5BE-5469-44AF-A6D3-F58BBB5BDA4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
